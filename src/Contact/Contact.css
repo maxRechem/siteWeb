@@ -1,0 +1,134 @@
+
+.contactPart1 {
+	position: relative;
+    background-color:rgba(50.79479277133942, 74.60208848118782, 159.00974839925766, 1);
+    width:auto;
+    height:478px;
+}
+.contactPart2 {
+	position: relative;
+	background: #dfdfdf;
+	width:auto;
+	height:500px;
+	z-index: 0;
+}
+.touch { 
+	color:rgba(255, 255, 255, 1);
+	width:402px;
+	height:66px;
+	font-family: Sofia Pro, serif;
+	text-align:left;
+	font-size:64px;
+	letter-spacing:5px;
+	line-height:66px;
+	position: absolute;
+	left: 150px; /* Ajustement de la position horizontale */
+	bottom: 200px; /* Ajustement de la position verticale */
+}
+
+.contact_text { 
+	color:rgba(236.00000113248825, 236.00000113248825, 254.00000005960464, 1);
+	width:448px;
+	height:33px;
+	font-family: Sofia Pro, serif;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:2px;
+	line-height:33px;
+	position: absolute;
+	left: 150px; /* Ajustement de la position horizontale */
+	bottom: 160px; /* Ajustement de la position verticale */
+}
+
+.contact_cadre { 
+	box-shadow:0px 4px 32px rgba(0, 0, 0, 0.05000000074505806);
+	background-color:rgba(255, 255, 255, 1);
+	width:640px;
+	height:800px;
+	border-radius:24px;
+	position: absolute;
+	top: 215px;
+	right: -10%;
+	transform: translateX(-50%);
+	z-index: 4;
+	display: grid;
+
+}
+
+.contact_cadre span {
+	font-family: Sofia Pro, serif;
+	text-align: left;
+	font-size: 16px;
+	line-height: 54px; /* Ajustement pour aligner verticalement avec les inputs */
+	margin-left: 45px;
+	width: 200%;
+}
+.contact_cadre input {
+	width: 80%; /* Pour occuper tout l'espace disponible */
+	height: 35px;
+	background-color: rgba(244, 245, 246, 1);
+	border-radius: 12px;
+	border: none;
+	padding: 8px; /* Ajustement du padding pour les inputs */
+	margin-left: 40px;
+}
+
+.name_input,.email_input,.company_input,.phone_input,.subject_input {
+	background-color:rgba(244.0000006556511, 245.00000059604645, 246.0000005364418, 1);
+
+}
+.message_input {
+	height: 380px;
+}
+
+.contact_name,.contact_email,.contact_company,.contact_phone,.contact_subject,.contact_message { 
+	color:rgba(92.00000211596489, 95.00000193715096, 110.00000104308128, 1);
+	width:78px;
+	height:24px;
+	font-family: Sofia Pro, serif;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:2px;
+	line-height:33px;
+}
+
+
+.buttonSend {
+	width: 110px;
+	background: rgba(101, 31, 255, 1);
+	color: rgba(255, 255, 255, 1);
+	border-radius: 30px;
+	font-size: 20px;
+	margin-left: 50px;
+	cursor: pointer; /* Ajout du curseur pointer */
+	transition: background-color 0.3s ease; /* Animation de transition pour la couleur de fond */
+}
+
+.buttonSend:hover {
+	background-color: rgb(49, 6, 141); /* Changement de couleur de fond au survol */
+}
+
+.buttonSend:active {
+	background-color: rgba(80, 10, 220, 1); /* Changement de couleur de fond lors du clic */
+}
+
+
+
+
+@media (max-width: 1400px) {
+	.contact_cadre {
+		top: 315px;
+		right: 0%;
+	}
+	.touch {
+		text-align:center;
+		left: 370px;
+		bottom: 350px;
+	}
+
+	.contact_text {
+		text-align:center;
+		left: 350px;
+		bottom: 300px;
+	}
+}
